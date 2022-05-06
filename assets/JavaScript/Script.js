@@ -211,7 +211,7 @@ let fon = document.querySelectorAll(".fon");
 function randomUrlForImg(){
     fon.forEach(function(item){
         let random = Math.floor(Math.random()*(fon.length)); 
-        item.src = `../Images/fon/`+ ObjectFastInputIngredients.fonImg[random] +`.svg`;
+        item.src = `../assets/Images/fon/`+ ObjectFastInputIngredients.fonImg[random] +`.svg`;
         console.log(item.has)
     });
 }randomUrlForImg();
