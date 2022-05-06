@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Culinary_Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/Images/cooking.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/Style/style.css">
+</head>
+
+<body>
+
+    <div class="bg">
+        <header>
+            <h1>Culinary Calculator</h1>
+            <p> Привет, здесь ты можешь узнать пропорции своего рецепта, просто запиши граммовку и добавь разницу. Также можешь сохранить свои рецепты, и использовать их повторно, только помни все сохранение находятся у тебя в браузере в Cookie, если ты очистишь Cookie то рецепты пропадут.</p>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="containerStyle">
+        <div class="flex column center-center">
+            <div class="flex h2style">
+                <h2>Быстрый ввод</h2>
+            </div>
+            <div class="flex column max-w800 mar_bot_25 fast_div_style">
+                <div class="flex wrap align-c span-text-center">
+                    <span><b>Влажные</b></span>
+                    <div data-id="fust_input_wet" class="flex wrap search_FastIngredients">
+                        <!-- forEachFastIngredients() -->
+                    </div>
+                </div>
+                <div class="flex wrap align-c span-text-center">
+                    <span><b>Сухие</b></span>
+                    <div data-id="fust_input_dry" class="flex wrap search_FastIngredients">
+                        <!-- forEachFastIngredients() -->
+                    </div>
+                </div>
+                <div class="flex wrap align-c span-text-center">
+                    <span><b>Орехи</b></span>
+                    <div data-id="fust_input_nut" class="flex wrap search_FastIngredients">
+                        <!-- forEachFastIngredients() -->
+                    </div>
+                </div>
+                <div class="flex wrap align-c span-text-center">
+                    <span><b>Фрукты</b></span>
+                    <div data-id="fust_input_fruits" class="flex wrap search_FastIngredients">
+                        <!-- forEachFastIngredients() -->
+                    </div>
+                </div>
+                <div class="flex wrap align-c span-text-center">
+                    <span><b>Сухофрукты</b></span>
+                    <div data-id="fust_input_dried_fruits" class="flex wrap search_FastIngredients">
+                        <!-- forEachFastIngredients() -->
+                    </div>
+                </div>
+                <div class="flex wrap align-c span-text-center">
+                    <span><b>Другое</b></span>
+                    <div data-id="fust_input_other" class="flex wrap search_FastIngredients">
+                        <!-- forEachFastIngredients() -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex wrap center-center">
+            <div class="flex center-center h2style">
+                <h2>Ваш рецепт</h2>
+            </div>
+
+            <div class="flex max-w800 mar_bot_25">
+                <div class="flex column w-100procent">
+                    <span class="fs1_3">Основные ингредиенты</span>
+                    <div class="flex space-between styledivform2 styledivform2">
+                        <div class="formStyle">
+                            <input id="mainInpIngredients" type="text" placeholder="Название ингредиента">
+                            <input id="mainInpGram" class="checkNumber" type="text" placeholder="Грам">
+                            <input id="mainInpGramPlus" class="checkNumber" type="text" placeholder="Разница">
+                        </div>
+                        <div class="div_btn_delete">
+                            <button id="btn_delete_text">
+                                <?xml version="1.0" ?><svg style="enable-background:new 0 0 24 24;" version="1.1"
+                                    viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="info" />
+                                    <g id="icons">
+                                        <path
+                                            d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z"
+                                            id="exit" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-formlenght="false" class="flex column" id="enterForm">
+                        <!-- click_addNewForm() -->
+                    </div>
+                    <div class="flex wrap">
+                        <button id="addNewForm" data-color="green" class="iconBtn">+</button>
+                        <button id="saveRecipe" data-color="blue" class="iconBtn">Сохранить рецепт</button>
+                        <button id="GoCount" data-color="green" class="iconBtn">Посчитать</button>
+                        <button id="DeleteAll" data-color="red" class="iconBtn">Удалить Всё</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="flex wrap center-center">
+                <div class="flex center-center h2style">
+                    <h2>Ваши рецепты</h2>
+                </div>
+
+                <div class="flex max-w800 mar_bot_25">
+                    <div id="AddR" class="flex column w-100procent">
+                        <!-- AddRecipe() -->
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+    </div>
+ 
+    <div class="pos_real">
+        <img src="#" id="fon1" class="fon">
+        <img src="#" id="fon2" class="fon">
+        <img src="#" id="fon3" class="fon">
+        <img src="#" id="fon4" class="fon">
+        <img src="#" id="fon5" class="fon">
+        <img src="#" id="fon6" class="fon">
+        <img src="#" id="fon7" class="fon">
+        <img src="#" id="fon8" class="fon">
+        <img src="#" id="fon9" class="fon">
+        <img src="#" id="fon10" class="fon">
+    </div>
+ 
+    <div style="padding: 200px;"></div> 
+ 
+    <script src="./assets/JavaScript/Script.js"></script>
+</body>
+
+</html>
