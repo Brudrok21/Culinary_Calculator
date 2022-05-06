@@ -1,6 +1,6 @@
 body {
     margin    : auto 0;
-    background: #3a3739;
+    background:linear-gradient(#00000096, #00000096), url("../Images/fonkletka.jpg");
     color     : #fff;
 }
 
@@ -131,6 +131,7 @@ div>input:first-child {
 
 
 .container {
+   
     padding-left   : 15px;
     font-family    : 'Open Sans', sans-serif;
     display        : flex;
