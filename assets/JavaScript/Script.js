@@ -35,7 +35,7 @@ let ObjectFastInputIngredients = {
             url: "error.svg"
         },
         cream_cheese = {
-            name: "Сливочное сыр",
+            name: "Сливочный сыр",
             url: "error.svg"
         },
         liquid_vanillin = {
