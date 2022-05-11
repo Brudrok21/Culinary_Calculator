@@ -486,7 +486,7 @@ function pushSaveObject() {
     SAVEOBJ["pass"] = Math.floor(Math.random() * 10000);
 
     InpGram.forEach(function (element, i) {
-        result[i].textContent = Math.floor(element.value * procent);
+        result[i].textContent = Math.fround(element.value * procent ).toFixed(1) ;
         SAVEOBJ[i] = {
             "name": ValueInpName[i].value,
             "gram": InpGram[i].value,
