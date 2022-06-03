@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="./assets/Images/cooking.png" type="image/png">
+    <link rel="shortcut icon" href="./assets/Images/cooking.webp" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,99 +20,132 @@
     <div class="bg">
         <header>
             <h1>Culinary Calculator</h1>
-            <p>Привет, здесь ты можешь узнать пропорции своего рецепта, просто запиши граммовку и добавь разницу. Также можешь сохранить свои рецепты, и использовать их повторно, только помни все сохранения находятся у тебя в браузере в Cookie, если ты отчистишь Cookie то рецепты пропадут.</p>
+            <p>Привет, здесь ты можешь узнать пропорции своего рецепта, просто запиши граммовку и добавь разницу. Также
+                можешь сохранить свои рецепты, и использовать их повторно, только помни все сохранения находятся у тебя
+                в браузере в Cookie, если ты отчистишь Cookie то рецепты пропадут.</p>
         </header>
     </div>
 
     <div class="container">
         <div class="containerStyle">
-        <div class="flex column center-center">
-            <div class="flex h2style">
-                <h2>Быстрый ввод</h2>
-            </div>
-            <div class="flex column max-w800 mar_bot_25 fast_div_style">
-                <div class="flex wrap align-c span-text-center">
-                    <span><b>Влажные</b></span>
-                    <div data-id="fust_input_wet" class="flex wrap search_FastIngredients">
-                        <!-- forEachFastIngredients() -->
-                    </div>
+            <div class="flex column center-center">
+                <div class="flex h2style">
+                    <h2>Быстрый ввод</h2>
                 </div>
-                <div class="flex wrap align-c span-text-center">
-                    <span><b>Сухие</b></span>
-                    <div data-id="fust_input_dry" class="flex wrap search_FastIngredients">
-                        <!-- forEachFastIngredients() -->
-                    </div>
-                </div>
-                <div class="flex wrap align-c span-text-center">
-                    <span><b>Орехи</b></span>
-                    <div data-id="fust_input_nut" class="flex wrap search_FastIngredients">
-                        <!-- forEachFastIngredients() -->
-                    </div>
-                </div>
-                <div class="flex wrap align-c span-text-center">
-                    <span><b>Фрукты</b></span>
-                    <div data-id="fust_input_fruits" class="flex wrap search_FastIngredients">
-                        <!-- forEachFastIngredients() -->
-                    </div>
-                </div>
-                <div class="flex wrap align-c span-text-center">
-                    <span><b>Сухофрукты</b></span>
-                    <div data-id="fust_input_dried_fruits" class="flex wrap search_FastIngredients">
-                        <!-- forEachFastIngredients() -->
-                    </div>
-                </div>
-                <div class="flex wrap align-c span-text-center">
-                    <span><b>Другое</b></span>
-                    <div data-id="fust_input_other" class="flex wrap search_FastIngredients">
-                        <!-- forEachFastIngredients() -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex wrap center-center">
-            <div class="flex center-center h2style">
-                <h2>Ваш рецепт</h2>
-            </div>
-
-            <div class="flex max-w800 mar_bot_25">
-                <div class="flex column w-100procent">
-                    <span class="fs1_3">Основные ингредиенты</span>
-                    <div class="flex space-between styledivform2 styledivform2">
-                        <div class="formStyle">
-                            <input id="mainInpIngredients" type="text" placeholder="Название ингредиента">
-                            <input id="mainInpGram" class="checkNumber" type="text" placeholder="Грам">
-                            <input id="mainInpGramPlus" class="checkNumber" type="text" placeholder="Разница">
-                        </div>
-                        <div class="div_btn_delete">
-                            <button id="btn_delete_text">
-                                <?xml version="1.0" ?><svg style="enable-background:new 0 0 24 24;" version="1.1"
-                                    viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <g id="info" />
-                                    <g id="icons">
-                                        <path
-                                            d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z"
-                                            id="exit" />
-                                    </g>
-                                </svg>
-                            </button>
+                <div class="flex column max-w800 mar_bot_25 fast_div_style">
+                    <!-- <div class="flex j-content-right">
+                        <button class="iconBtn">
+                            <?xml  version="1.0" ?><svg class="ic_fluent_text_column_two_icon" id="testSVG" fill="#fff" height="48" viewBox="0 0 20 20" width="48"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 5.75C17 5.33579 16.6642 5 16.25 5H11.75C11.3358 5 11 5.33579 11 5.75C11 6.16421 11.3358 6.5 11.75 6.5H16.25C16.6642 6.5 17 6.16421 17 5.75Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M9 5.75C9 5.33579 8.66421 5 8.25 5H3.75C3.33579 5 3 5.33579 3 5.75C3 6.16421 3.33579 6.5 3.75 6.5H8.25C8.66421 6.5 9 6.16421 9 5.75Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M17 8.75C17 8.33579 16.6642 8 16.25 8H11.75C11.3358 8 11 8.33579 11 8.75C11 9.16421 11.3358 9.5 11.75 9.5H16.25C16.6642 9.5 17 9.16421 17 8.75Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M9 8.75C9 8.33579 8.66421 8 8.25 8H3.75C3.33579 8 3 8.33579 3 8.75C3 9.16421 3.33579 9.5 3.75 9.5H8.25C8.66421 9.5 9 9.16421 9 8.75Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M17 11.75C17 11.3358 16.6642 11 16.25 11H11.75C11.3358 11 11 11.3358 11 11.75C11 12.1642 11.3358 12.5 11.75 12.5H16.25C16.6642 12.5 17 12.1642 17 11.75Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M9 11.75C9 11.3358 8.66421 11 8.25 11H3.75C3.33579 11 3 11.3358 3 11.75C3 12.1642 3.33579 12.5 3.75 12.5H8.25C8.66421 12.5 9 12.1642 9 11.75Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M17 14.75C17 14.3358 16.6642 14 16.25 14H11.75C11.3358 14 11 14.3358 11 14.75C11 15.1642 11.3358 15.5 11.75 15.5H16.25C16.6642 15.5 17 15.1642 17 14.75Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M9 14.75C9 14.3358 8.66421 14 8.25 14H3.75C3.33579 14 3 14.3358 3 14.75C3 15.1642 3.33579 15.5 3.75 15.5H8.25C8.66421 15.5 9 15.1642 9 14.75Z"
+                                    fill="#fff" />
+                            </svg>
+                        </button>
+                    </div> -->
+                    <div class="flex wrap align-c span-text-center">
+                        <span><b>Влажные</b></span>
+                        <div data-id="fust_input_wet" class="flex wrap search_FastIngredients">
+                            <!-- forEachFastIngredients() -->
                         </div>
                     </div>
-                    <div data-formlenght="false" class="flex column" id="enterForm">
-                        <!-- click_addNewForm() -->
+                    <div class="flex wrap align-c span-text-center">
+                        <span><b>Сухие</b></span>
+                        <div data-id="fust_input_dry" class="flex wrap search_FastIngredients">
+                            <!-- forEachFastIngredients() -->
+                        </div>
                     </div>
-                    <div class="flex wrap">
-                        <button id="addNewForm" data-color="green" class="iconBtn">+</button>
-                        <button id="saveRecipe" data-color="blue" class="iconBtn">Сохранить рецепт</button>
-                        <button id="GoCount" data-color="green" class="iconBtn">Посчитать</button>
-                        <button id="DeleteAll" data-color="red" class="iconBtn">Удалить Всё</button>
+                    <div class="flex wrap align-c span-text-center">
+                        <span><b>Орехи</b></span>
+                        <div data-id="fust_input_nut" class="flex wrap search_FastIngredients">
+                            <!-- forEachFastIngredients() -->
+                        </div>
+                    </div>
+                    <div class="flex wrap align-c span-text-center">
+                        <span><b>Фрукты</b></span>
+                        <div data-id="fust_input_fruits" class="flex wrap search_FastIngredients">
+                            <!-- forEachFastIngredients() -->
+                        </div>
+                    </div>
+                    <div class="flex wrap align-c span-text-center">
+                        <span><b>Сухофрукты</b></span>
+                        <div data-id="fust_input_dried_fruits" class="flex wrap search_FastIngredients">
+                            <!-- forEachFastIngredients() -->
+                        </div>
+                    </div>
+                    <div class="flex wrap align-c span-text-center">
+                        <span><b>Другое</b></span>
+                        <div data-id="fust_input_other" class="flex wrap search_FastIngredients">
+                            <!-- forEachFastIngredients() -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
             <div class="flex wrap center-center">
+                <div class="flex center-center h2style">
+                    <h2>Ваш рецепт</h2>
+                </div>
+
+                <div class="flex max-w800 mar_bot_25">
+                    <div class="flex column w-100procent">
+                        <span class="fs1_3">Основные ингредиенты</span>
+                        <div class="flex space-between styledivform2 styledivform2">
+                            <div class="formStyle">
+                                <input id="mainInpIngredients" type="text" placeholder="Название ингредиента">
+                                <input id="mainInpGram" class="checkNumber" type="text" placeholder="Грам">
+                                <input id="mainInpGramPlus" class="checkNumber" type="text" placeholder="Разница">
+                            </div>
+                            <div class="div_btn_delete">
+                                <button id="btn_delete_text">
+                                    <?xml version="1.0" ?><svg style="enable-background:new 0 0 24 24;" version="1.1"
+                                        viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="info" />
+                                        <g id="icons">
+                                            <path
+                                                d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z"
+                                                id="exit" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div data-formlenght="false" class="flex column" id="enterForm">
+                            <!-- click_addNewForm() -->
+                        </div>
+                        <div class="flex wrap">
+                            <button id="addNewForm" data-color="green" class="iconBtn">+</button>
+                            <button id="saveRecipe" data-color="blue" class="iconBtn">Сохранить рецепт</button>
+                            <button id="GoCount" data-color="green" class="iconBtn">Посчитать</button>
+                            <button id="DeleteAll" data-color="red" class="iconBtn">Удалить Всё</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="checkSave" class="flex wrap center-center">
                 <div class="flex center-center h2style">
                     <h2>Ваши рецепты</h2>
                 </div>
@@ -123,10 +156,10 @@
                     </div>
                 </div>
 
-            </div> 
+            </div>
         </div>
     </div>
- 
+
     <div class="pos_real">
         <img src="#" id="fon1" class="fon">
         <img src="#" id="fon2" class="fon">
@@ -139,7 +172,7 @@
         <img src="#" id="fon9" class="fon">
         <img src="#" id="fon10" class="fon">
     </div>
-  
+
     <script src="./assets/JavaScript/Script.js"></script>
 </body>
 

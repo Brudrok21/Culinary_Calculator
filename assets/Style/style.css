@@ -1,6 +1,6 @@
 body {
     margin    : auto 0;
-    background:linear-gradient(#00000096, #00000096), url("../Images/fonkletka.jpg");
+    background:linear-gradient(#00000096, #00000096), url("../Images/fonkletka.webp");
     color     : #fff;
 }
 
@@ -171,7 +171,7 @@ div>input:first-child {
 }
 
 .bg {
-    background         : linear-gradient(#00000096, #00000096), url('../Images/bg.jpg');
+    background         : linear-gradient(#00000096, #00000096), url('../Images/bg.webp');
     background-position: center;
     background-size    : cover;
     padding            : 150px 0px;
@@ -200,6 +200,8 @@ div>input:first-child {
 }
 
 .bg>header>p {
+    margin: 0px;
+    margin-bottom: 42.88px;
     font-size: 1.7rem;
     max-width: 800px;
 }
@@ -216,6 +218,9 @@ div>input:first-child {
 
 .flex {
     display: flex;
+}
+.j-content-right{
+    justify-content: right;
 }
 
 .wrap {
@@ -511,7 +516,9 @@ div>input:first-child {
     animation-duration: 5s;
 }
 
-
+.ic_fluent_text_column_two_icon > path{
+     
+}
 
 @media screen and (max-width: 900px) {
     body {
@@ -539,4 +546,7 @@ div>input:first-child {
         animation:none 5s  linear infinite;
     }
     /* background: #2b292a; */
+}
+@media screen and (max-width: 390px) {
+    .bg{padding: 0px;}
 }

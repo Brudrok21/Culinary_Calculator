@@ -203,6 +203,8 @@ let mainInpIngredients = document.querySelector("#mainInpIngredients");
 let mainInpGram = document.querySelector("#mainInpGram");
 let mainInpGramPlus = document.querySelector("#mainInpGramPlus");
 
+let checkSave =document.querySelector("#checkSave");
+ 
 
 let GoCount = document.querySelector("#GoCount");
 let AddR = document.querySelector("#AddR");
@@ -212,7 +214,7 @@ function randomUrlForImg(){
     fon.forEach(function(item){
         let random = Math.floor(Math.random()*(fon.length)); 
         item.src = `./assets/Images/fon/`+ ObjectFastInputIngredients.fonImg[random] +`.svg`;
-        console.log(item.has)
+ 
     });
 }randomUrlForImg();
  
@@ -241,6 +243,7 @@ let saveRecipe = document.querySelector("#saveRecipe").onclick = function () {
     saveCookieRecipe();
     use_UseThisR();
     click_DelThisR();
+    showRecipe();
 }
 
 
@@ -324,9 +327,10 @@ function click_DelThisR() {
                 thisRecipt[i].remove();
                 delete SAVERECIPT[el.dataset.id];
                 saveCookieRecipe();
+                showRecipe();
             }
         });
-    });
+    }); 
 } click_DelThisR();
 
 function use_UseThisR() {
@@ -559,3 +563,25 @@ if (Object.keys(cookieSAVEOBJ).length !== 0) {
     }
     click_deleteForm();
 }
+
+function showRecipe(){
+    let keyRecipe = Object.keys(SAVERECIPT);
+    if(keyRecipe.length == 0){
+        checkSave.style.display = "none";
+    }else{
+        checkSave.style.display = "flex";
+    } 
+}showRecipe();
+
+
+// let testSVG = document.getElementById("testSVG");
+// let child = testSVG.children;
+ 
+// for(let i = 0; i < child.length; i++){
+//   let elem = child[i];
+//   if(elem.tagName === "path"){
+    
+//     console.dir(i+ "---" +  Math.round(elem.getTotalLength()));
+//     console.log(elem);
+//   }
+// }
