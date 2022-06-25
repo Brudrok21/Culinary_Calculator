@@ -242,10 +242,12 @@ let DeleteAll = document.querySelector("#DeleteAll").onclick = function () {
 };
 let saveRecipe = document.querySelector("#saveRecipe").onclick = function () {
     let NameRecept = prompt('Назовите рецепт');
+    let description = prompt('Краткое описание');
     let keys = Object.keys(SAVERECIPT);
     pushSaveObject();
     SAVERECIPT[keys.length] = SAVEOBJ;
     SAVERECIPT[keys.length].NameRecept = NameRecept;
+    SAVERECIPT[keys.length].description = description;
  
     AddRecipe();
     saveCookieRecipe();
@@ -298,6 +300,9 @@ function AddRecipe() {
                     <button data-id="${element}" data-pass="${SAVERECIPT[element].pass}" data-color="green" class="iconBtn UseThisR">Использовать</button>
                     <button data-id="${element}" data-pass="${SAVERECIPT[element].pass}" data-color="red" class="iconBtn DelThisR">Удалить</button>
                 </div> 
+            </div>
+            <div>
+                <p>${SAVERECIPT[element].description = (SAVERECIPT[element].description == undefined ? "" : SAVERECIPT[element].description)}</p>
             </div>
             
             <div class="flex column styleP">

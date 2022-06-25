@@ -138,6 +138,14 @@ div>input:first-child {
     justify-content: center;
     padding-right  : 15px;
 }
+.R_name{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    font-style: initial;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
 
 .containerStyle {
     position: relative;
