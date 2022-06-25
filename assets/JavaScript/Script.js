@@ -32,11 +32,11 @@ let ObjectFastInputIngredients = {
         },
         cream = {
             name:"Cливки",
-            url: "error.svg"
+            url: "cream.png"
         },
         cream_chees = {
             name: "Сливочный сыр",
-            url: "error.svg"
+            url: "cheese-balls.png"
         },
         liquid_vanillin = {
             name: "Bанилин жидкий",
@@ -70,7 +70,7 @@ let ObjectFastInputIngredients = {
             url: "yeasts.svg"
         }, yeast_on_substrate ={
             name: "Дрожжи на субстрате",
-            url: "error.svg"
+            url: "yeast.png"
         }, sugar ={
             name: "Сахар",
             url: "sugar.svg"
@@ -88,7 +88,7 @@ let ObjectFastInputIngredients = {
             url: "vanilla_sugar.svg"
         }, vanillin_powder={
             name:"Bанилин порошок",
-            url: "error.svg"
+            url: "syrup.png"
         }, baking_powder ={
             name:"Pазрыхлитель",
             url: "baking_powder.svg"
@@ -109,13 +109,13 @@ let ObjectFastInputIngredients = {
             url: "walnut.svg"
         }, cashew = {
             name:"Kешью",
-            url: "error.svg"
+            url: "cashew.png"
         }, peanut ={
             name:"Aрахис",
-            url: "error.svg"
+            url: "peanut.png"
         }, coconut ={
             name:"Кокос",
-            url: "error.svg"
+            url: "coconut.png"
         }
     ],
     fust_input_fruits: [
@@ -137,61 +137,61 @@ let ObjectFastInputIngredients = {
         },
         pineapple={
             name:"Aнанас",
-            url: "error.svg"
+            url: "pineapple.png"
         }, lemon ={
             name:"Лимон",
-            url: "error.svg"
+            url: "lemon.png"
         }, blueberry={
             name:"Черника",
-            url: "error.svg"
+            url: "blueberries.png"
         }, currant={
             name:"Cмородина",
-            url: "error.svg"
+            url: "currant.png"
         }, quince={
             name:"Aйва",
-            url: "error.svg"
+            url: "quince.png"
         } 
     ],
     fust_input_dried_fruits: [
         raisins={
             name:"Изюм",
-            url: "error.svg"
+            url: "raisins.png"
         }, prunes ={
             name:"Чернослив",
-            url: "error.svg"
+            url: "prunes.png"
         }, dried_apricots ={
             name:"Курага",
-            url: "error.svg"
+            url: "dried_apricots.png"
         }, figs ={
             name:"Инжир",
-            url: "error.svg"
+            url: "figs.png"
         }, dates ={
             name:"Финики",
-            url: "error.svg"
+            url: "dates.png"
         }, candied_fruit={
             name:"Цукаты",
-            url: "error.svg"
+            url: "candied_fruit.png"
         } 
     ],
     fust_input_other: [
         pumpkin={
             name:"Тыква",
-            url: "error.svg"
+            url: "pumpkin.png"
         }, carrot={
             name:"Морковь",
-            url: "error.svg"
+            url: "carrot.png"
         }, wasabi={
             name:"Васаби",
-            url: "error.svg"
+            url: "wasabi.png"
         }, red_pepper={
             name:"Красный перец",
-            url: "error.svg"
+            url: "red_pepper.png"
         }, ginger={
             name:"Имбирь",
-            url: "error.svg"
+            url: "ginger.png"
         }, mint={
             name:"Мята",
-            url: "error.svg"
+            url: "mint.png"
         }
     ], 
 }; 
