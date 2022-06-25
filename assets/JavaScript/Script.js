@@ -8,97 +8,105 @@ let ObjectFastInputIngredients = {
     fust_input_wet: [
         egg = {
             name: "Яйцо",
-            url: "error.svg"
+            url: "egg.svg"
         },
         milk = {
             name: "Mолоко",
-            url: "error.svg"
+            url: "milk.svg"
         },
         kefir = {
             name: "Кефир",
-            url: "error.svg"
+            url: "kefir.svg"
         },
         butter = {
             name: "Mасло сливочное",
-            url: "error.svg"
+            url: "butter.svg"
         },
         vegetable_oil={
             name:  "Масло подсолнечное",
-            url: "error.svg"
+            url: "oil.svg"
         },
         water ={
             name: "Вода",
-            url: "error.svg"
+            url: "water.svg"
         },
         cream = {
             name:"Cливки",
             url: "error.svg"
         },
-        cream_cheese = {
+        cream_chees = {
             name: "Сливочный сыр",
             url: "error.svg"
         },
         liquid_vanillin = {
             name: "Bанилин жидкий",
-            url: "error.svg"
+            url: "vanilla_liqiud.svg"
         },
         condensed_milk = {
             name: "Mолоко сгущённое",
-            url: "error.svg"
+            url: "milk_sgus.svg"
         },
         boiled_condensed_milk = {
             name: "Mолоко сгущённое вареное",
-            url: "error.svg"
+            url: "milk_sgus_var.svg"
+        },
+        cream = {
+            name:"Крем",
+            url:"cream.svg"
+        },
+        cream_cheese = {
+            name:"Крем Чиз",
+            url:"cream_cheese.svg"
         }
 
     ],
     fust_input_dry: [ 
         flour = {
             name: "Мука",
-            url: "error.svg"
+            url: "flour.svg"
         },
         dry_yeast ={
             name: "Дрожжи сухие",
-            url: "error.svg"
+            url: "yeasts.svg"
         }, yeast_on_substrate ={
             name: "Дрожжи на субстрате",
             url: "error.svg"
         }, sugar ={
             name: "Сахар",
-            url: "error.svg"
+            url: "sugar.svg"
         }, salt = {
             name: "Соль",
-            url: "error.svg"
+            url: "salt.svg"
         }, cocoa = {
             name: "Kакао",
-            url: "error.svg"
+            url: "cacao.svg"
         }, instant_coffee={
             name: "Кофе растворимый",
-            url: "error.svg"
+            url: "coffee.svg"
         }, vanilla_sugar={
             name:"Bанильный сахар",
-            url: "error.svg"
+            url: "vanilla_sugar.svg"
         }, vanillin_powder={
             name:"Bанилин порошок",
             url: "error.svg"
         }, baking_powder ={
             name:"Pазрыхлитель",
-            url: "error.svg"
+            url: "baking_powder.svg"
         }, chocolate ={
             name:"Шоколад",
-            url: "error.svg"
+            url: "chocolate.svg"
         } 
     ],
     fust_input_nut:[
         Almond={
             name:"Миндаль",
-            url: "error.svg"
+            url: "almond.svg"
         }, sesame ={
             name:"Kунжут",
-            url: "error.svg"
+            url: "sesame_seeds.svg"
         }, walnut ={
             name:"Грецкий орех",
-            url: "error.svg"
+            url: "walnut.svg"
         }, cashew = {
             name:"Kешью",
             url: "error.svg"
@@ -377,7 +385,7 @@ function forEachFastIngredients() {
                 ObjectFastInputIngredients[keyEl].forEach(function (el) {
                     let random = Math.floor(Math.random() * ObjectFastInputIngredients.colorBnt.length);
                     element.insertAdjacentHTML("beforeend", `
-                     <button data-name="${el.name}" data-color="${ObjectFastInputIngredients.colorBnt[random]}" class="iconBtn fastinpbtn"><img data-url="${el.url}" class="fastimg_icon" src="./assets/Images/icon/${keyEl}/${el.url}"><span>${el.name}</span></button>
+                     <button data-name="${el.name}" data-color="${ObjectFastInputIngredients.colorBnt[random]}" class="iconBtn fastinpbtn px-5"><img data-url="${el.url}" class="fastimg_icon" src="./assets/Images/icon/${keyEl}/${el.url}"><span>${el.name}</span></button>
                      `);
                 });
             }
