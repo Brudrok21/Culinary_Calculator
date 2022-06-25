@@ -145,6 +145,10 @@ div>input:first-child {
     font-weight: bold;
     font-size: 1.7rem;
     margin-bottom: 5px;
+    max-width: 450px;
+}
+.align-i-c{
+    align-items: center;
 }
 
 .containerStyle {

@@ -291,7 +291,7 @@ function AddRecipe() {
     keys.forEach(function (element, i) {
         AddR.insertAdjacentHTML("beforeend", `  
         <div data-pass="${SAVERECIPT[element].pass}" class="thisRecipt">
-            <div class="flex space-between styledivform2 wrap">
+            <div class="flex space-between styledivform2 wrap align-i-c">
                 <div>
                     <h3 class="R_name">${SAVERECIPT[element].NameRecept}</h3>
                 </div>
