@@ -368,8 +368,8 @@ function use_UseThisR() {
                     </div>`);
                 }
             });
-            click_deleteForm();
-
+            enterForm.dataset.formlenght = "true";
+            click_deleteForm(); 
         });
     });
 } use_UseThisR();
@@ -450,16 +450,18 @@ function click_addNewForm() {
     });
 } click_addNewForm()
 
-function click_deleteForm() {
+function click_deleteForm() { 
     if (enterForm.dataset.formlenght === "true") {
         let btn_delete = document.querySelectorAll(".btn_delete");
-        btn_delete.forEach(function (element) {
-            element.addEventListener("click", function (e) {
+        console.log(btn_delete);
+        btn_delete.forEach(function (element) { 
+            element.addEventListener("click", function (e) { 
+                console.log(element)
                 element.parentElement.parentElement.remove();
                 pushSaveObject();
                 if (enterForm.children.length == 0) {
                     enterForm.dataset.formlenght = "false";
-                }
+                } 
                 saveCookie()
             });
         });
